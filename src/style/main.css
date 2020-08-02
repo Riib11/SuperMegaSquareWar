@@ -64,7 +64,7 @@ input {
 
 
 #input_puzzle_size {
-  width: 40px;
+  width: 60px;
 }
 
 #puzzle_status {
@@ -86,6 +86,7 @@ input {
 
 #puzzle_container td {
   border-collapse: collapse;
+  border: 5px solid rgba(0, 0, 0, 0.1);
 
   width: 20px;
   height: 20px;
