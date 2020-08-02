@@ -18,6 +18,10 @@ body {
   font-size: 14pt;
 }
 
+main {
+  margin: auto;
+}
+
 button {
   outline: none;
   border: none;
@@ -64,7 +68,7 @@ input {
 }
 
 #puzzle_status {
-  margin-left: 10px;
+  text-align: center;
 }
 
 #puzzle_container {

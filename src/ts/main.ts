@@ -85,11 +85,11 @@ function check_puzzle() {
   check(empty_rows == 0,
       `empty rows x${empty_rows}`);
   check(empty_cols == 0,
-      `empty cols x${empty_cols}`);
+      `empty columnss x${empty_cols}`);
   check(colliding_rows == 0,
       `colliding rows x${colliding_rows}`);
   check(colliding_cols == 0,
-      `colliding cols x${colliding_cols}`);
+      `colliding columns x${colliding_cols}`);
 
 
   // components
@@ -118,8 +118,7 @@ function check_puzzle() {
     puzzle_status.innerText = "success!";
     puzzle_status.style.color = "lime";
   } else {
-    failure_messages = failure_messages.map(msg => `<li>${msg}</li>`)
-    puzzle_status.innerHTML = "<ul>"+failure_messages.join("")+"<ul>";
+    puzzle_status.innerHTML = failure_messages.join(",<br>")+".";
     puzzle_status.style.color = "red";
   }
 }

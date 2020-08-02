@@ -102,8 +102,7 @@ function check_puzzle() {
         puzzle_status.style.color = "lime";
     }
     else {
-        failure_messages = failure_messages.map(msg => `<li>${msg}</li>`);
-        puzzle_status.innerHTML = "<ul>" + failure_messages.join("") + "<ul>";
+        puzzle_status.innerHTML = failure_messages.join(",<br>") + ".";
         puzzle_status.style.color = "red";
     }
 }
