@@ -62,6 +62,21 @@ input {
   padding: 4px;
 }
 
+#description {
+  display: inline-block;
+  padding: 10px;
+}
+
+#description-tooltip {
+  display: none;
+  visibility: none;
+  text-align: left;
+}
+
+#description:hover #description-tooltip {
+  display: block;
+  visibility: visible;
+}
 
 #input_puzzle_size {
   width: 60px;
