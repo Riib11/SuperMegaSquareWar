@@ -1,0 +1,83 @@
+:root {
+  --background-color: black;
+  --border-color: white;
+  --text-color: white;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 50px;
+  background-color: var(--background-color);
+
+  color: var(--text-color);
+  font-size: 14pt;
+}
+
+button {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  font-size: 14pt;
+}
+
+input {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  font-size: 14pt;
+}
+
+#input_puzzle_size_container {
+  margin-bottom: 20px;
+}
+
+#input_puzzle_size {
+  width: 40px;
+}
+
+#button_generate_puzzle {
+  margin-bottom: 20px;
+}
+
+#container {
+  margin-bottom: 20px;
+}
+
+#container table {
+  border-collapse: collapse;
+  border: 10px solid var(--border-color);
+}
+
+#container tr {
+  border-collapse: collapse;
+}
+
+#container td {
+  border-collapse: collapse;
+
+  width: 40px;
+  height: 40px;
+}
+
+.star {
+  /* background-color: lime; */
+}
+
+.marked {
+  background-color: cyan;
+}
+
+#container td.edge-left   { border-left:   10px solid var(--border-color); }
+#container td.edge-right  { border-right:  10px solid var(--border-color); }
+#container td.edge-top    { border-top:    10px solid var(--border-color); }
+#container td.edge-bottom { border-bottom: 10px solid var(--border-color); }
+
+/* .no-edge-left   { border-left:   10px solid red; }
+.no-edge-right  { border-right:  10px solid red; }
+.no-edge-top    { border-top:    10px solid red; }
+.no-edge-bottom { border-bottom: 10px solid red; } */
