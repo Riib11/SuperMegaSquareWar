@@ -78,6 +78,15 @@ input {
   visibility: visible;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 #input_puzzle_size {
   width: 60px;
 }
