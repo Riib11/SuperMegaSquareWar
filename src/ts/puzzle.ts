@@ -33,7 +33,7 @@ class Puzzle {
     this.edges = new EdgesManager(size);
 
     // initialize stars
-    this.stars = new Array();
+    this.stars = [];
     let options_x: Array<number> = shuffle(Array.from(Array(size).keys()));
     let options_y: Array<number> = shuffle(Array.from(Array(size).keys()));
     zip(options_x, options_y).forEach(p => this.stars.push(p));

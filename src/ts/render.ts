@@ -27,9 +27,3 @@ function render_puzzle(puzzle: Puzzle): HTMLElement {
   }
   return table
 }
-
-function interact_space(x, y): any {
-  return (event) => {
-    event.target.classList.toggle("marked");
-  }
-}

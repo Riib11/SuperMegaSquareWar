@@ -1,7 +1,7 @@
 :root {
-  --background-color: black;
-  --border-color: white;
-  --text-color: white;
+  --background-color: white;
+  --border-color: black;
+  --text-color: black;
 }
 
 html {
@@ -19,9 +19,14 @@ body {
 }
 
 button {
+  outline: none;
+  border: none;
+  padding: 6px;
+
   background-color: var(--text-color);
   color: var(--background-color);
   font-size: 14pt;
+  font-family: serif;
 }
 
 input {
@@ -32,52 +37,77 @@ input {
   font-size: 14pt;
 }
 
-#input_puzzle_size_container {
-  margin-bottom: 20px;
+.panel {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
+.panel button {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.panel div {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+}
+
+.bordered {
+  border: 1px solid var(--border-color);
+  padding: 4px;
+}
+
 
 #input_puzzle_size {
   width: 40px;
 }
 
-#button_generate_puzzle {
+#puzzle_status {
+  margin-left: 10px;
+}
+
+#puzzle_container {
   margin-bottom: 20px;
 }
 
-#container {
-  margin-bottom: 20px;
-}
-
-#container table {
+#puzzle_container table {
   border-collapse: collapse;
   border: 10px solid var(--border-color);
 }
 
-#container tr {
+#puzzle_container tr {
   border-collapse: collapse;
 }
 
-#container td {
+#puzzle_container td {
   border-collapse: collapse;
 
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
-.star {
-  /* background-color: lime; */
+#puzzle_container .star {
+
 }
 
-.marked {
+#puzzle_container .marked {
+  background-color: gray;
+}
+
+#puzzle_container .starred {
   background-color: cyan;
 }
 
-#container td.edge-left   { border-left:   10px solid var(--border-color); }
-#container td.edge-right  { border-right:  10px solid var(--border-color); }
-#container td.edge-top    { border-top:    10px solid var(--border-color); }
-#container td.edge-bottom { border-bottom: 10px solid var(--border-color); }
+#puzzle_container .star-highlight {
+  background-color: lime;
+}
 
-/* .no-edge-left   { border-left:   10px solid red; }
-.no-edge-right  { border-right:  10px solid red; }
-.no-edge-top    { border-top:    10px solid red; }
-.no-edge-bottom { border-bottom: 10px solid red; } */
+#puzzle_container td.edge-left
+  { border-left:   10px solid var(--border-color); }
+#puzzle_container td.edge-right
+  { border-right:  10px solid var(--border-color); }
+#puzzle_container td.edge-top
+  { border-top:    10px solid var(--border-color); }
+#puzzle_container td.edge-bottom
+  { border-bottom: 10px solid var(--border-color); }

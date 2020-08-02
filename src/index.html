@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <body>
-  <h1>Super Mega Cyan Square Battle</h1>
-  <div id="input_puzzle_size_container">
-    <span>size:</span>
-    <input id="input_puzzle_size" type="number"
-      value="8" min="2" max=50>
+  <h1>Super Mega Square War</h1>
+  <div class="panel">
+    <span class="bordered" style="display: inline-block;">
+      <span>size:</span>
+      <input id="input_puzzle_size" type="number"
+        value="3" min="3" max=50>
+    </span>
   </div>
-  <button id="button_generate_puzzle" type="button"
-    onclick="generate_puzzle()">generate puzzle</button>
-  <div id="container"></div>
-  <button id="button_check_puzzle" type="button"
-    onclick="check_puzzle()">check puzzle</button>
+  <div class="panel">
+    <button id="button_generate_puzzle" type="button"
+      onclick="generate_puzzle()">generate puzzle</button>
+  </div>
+  <div class="panel">
+    <button id="button_solve_puzzle" type="button"
+      onclick="solve_puzzle()">solve puzzle</button>
+  </div>
+  <div class="panel" id="puzzle_container"></div>
+  <div class="panel">
+    <button id="button_check_puzzle" type="button"
+      onclick="check_puzzle()">check puzzle</button>
+    <div id="puzzle_status"></div>
+  </div>
 </body>
 <head>
   <meta charset="utf-8">
   <title></title>
 
   <link rel="stylesheet" href="style/main.css">
+
+  <!-- <script src="script/algebra-0.2.6.min.js" charset="utf-8"></script> -->
+  <!-- <script src="script/test.js" charset="utf-8"></script> -->
 
   <script src="script/main.js" charset="utf-8"></script>
 </head>

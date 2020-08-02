@@ -1,3 +1,12 @@
+// random x in [a, b)
+function random_int_range(a: number, b: number): number {
+  return a + Math.floor(Math.random() * (b - a));
+}
+
+function sample<A>(a: A[]): A {
+  return a[random_int_range(0, a.length)];
+}
+
 // shuffle a list in place;
 function shuffle<A>(a: A[]): A[] {
   let i, j, k: number;
